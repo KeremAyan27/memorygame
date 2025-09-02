@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="game">
+    <div class="container">    
+      <section class="scoreboard" aria-live="polite">
+  <div class="scorecard">
+    <div class="scorecard__row">
+      <div class="scorecard__block scorecard__current">
+        <span class="scorecard__label">Score</span>
+        <span class="scorecard__value" id="scoreValue">0</span>
+      </div>
+      <div class="scorecard__block scorecard__best">
+        <span class="scorecard__label">Best</span>
+        <span class="scorecard__value" id="bestValue">0</span>
+      </div>
+    </div>
+
+    <div class="scorecard__row scorecard__history">
+      <div class="scorecard__block">
+        <span class="scorecard__label">Last 3</span>
+        <ul class="scorecard__list" id="lastScores">
+          <li>—</li><li>—</li><li>—</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+        </section>
+
+
+        <section class="game__cards">
+
+      
+
+        </section>
+    </div>    
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="app.js" defer></script>
+  
+
+</body>
+
+</html>
